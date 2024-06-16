@@ -1,4 +1,7 @@
+Here's the updated README with a detailed step-by-step guide specific to using your script:
+
 # VideoToTextTranscriber
+
 This repository contains a Python script that uses `moviepy.editor` to extract audio from video files, `SpeechRecognition` to transcribe the audio into text, and OpenAI's GPT model to correct the transcript by adding punctuation and fixing spelling errors. The script estimates processing time based on a sample from the video and allows you to choose the format for the transcription output (SRT with timestamps or plain text). Use at your own risk and give me props/throw me a bone if you end up rolling this into your new, AI startup that makes a zillion dollars.
 
 ## Prerequisites
@@ -16,7 +19,7 @@ To set up your local environment to run this tool, follow these steps:
 
 ```bash
 git clone https://github.com/1B05H1N/VideoToTextTranscriber.git
-cd Transcribe-Video
+cd VideoToTextTranscriber
 ```
 
 2. **Set up a virtual environment (recommended):**
@@ -73,6 +76,34 @@ You will be prompted to confirm the estimated processing time and to choose the 
 
 - If you choose to include timestamps, the output will be saved in `video_filename.srt` in SRT format.
 - If you choose plain text, the output will be saved in `video_filename_transcripts.txt`.
+
+### Step-by-Step Guide
+
+1. **Prepare Your Environment**:
+    - Ensure you have Python 3.x installed.
+    - Set up a virtual environment and install the required libraries as shown in the Installation section.
+
+2. **Set Your OpenAI API Key**:
+    - Obtain your API key from OpenAI.
+    - Set the API key in your terminal session:
+      ```bash
+      export OPENAI_API_KEY="your_openai_api_key"
+      ```
+
+3. **Run the Script**:
+    - Execute the script with your video file:
+      ```bash
+      python script.py /path/to/your/video.mp4
+      ```
+
+4. **Follow Prompts**:
+    - If an existing transcript file is found, choose whether to correct it using GPT or transcribe the video again.
+    - Review the estimated processing time and decide whether to proceed.
+    - Select the desired output format (SRT with timestamps or plain text).
+
+5. **Use the Output**:
+    - The transcript will be saved in the specified format.
+    - Import the transcript into your YouTube video or any other platform as needed.
 
 ## Script Details
 
