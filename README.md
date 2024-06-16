@@ -1,4 +1,4 @@
-Here's the updated README with a detailed step-by-step guide specific to using your script:
+Here's the updated README with the correct script name:
 
 # VideoToTextTranscriber
 
@@ -50,7 +50,7 @@ Replace `your_openai_api_key` with your actual OpenAI API key.
 2. **Run the script:**
 
 ```bash
-python script.py path_to_your_video.mp4
+python transcribe-video.py path_to_your_video.mp4
 ```
 
 Replace `path_to_your_video.mp4` with the path to the video file you wish to transcribe.
@@ -67,7 +67,7 @@ Replace `path_to_your_video.mp4` with the path to the video file you wish to tra
 Assuming your video file is located at `/path/to/video.mp4`, you would run:
 
 ```bash
-python script.py /path/to/video.mp4
+python transcribe-video.py /path/to/video.mp4
 ```
 
 You will be prompted to confirm the estimated processing time and to choose the output format.
@@ -93,7 +93,7 @@ You will be prompted to confirm the estimated processing time and to choose the 
 3. **Run the Script**:
     - Execute the script with your video file:
       ```bash
-      python script.py /path/to/your/video.mp4
+      python transcribe-video.py /path/to/your/video.mp4
       ```
 
 4. **Follow Prompts**:
