@@ -1,5 +1,3 @@
-Here's the updated README with the correct script name:
-
 # VideoToTextTranscriber
 
 This repository contains a Python script that uses `moviepy.editor` to extract audio from video files, `SpeechRecognition` to transcribe the audio into text, and OpenAI's GPT model to correct the transcript by adding punctuation and fixing spelling errors. The script estimates processing time based on a sample from the video and allows you to choose the format for the transcription output (SRT with timestamps or plain text). Use at your own risk and give me props/throw me a bone if you end up rolling this into your new, AI startup that makes a zillion dollars.
